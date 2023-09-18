@@ -50,14 +50,14 @@ def generate_launch_description():
         XMLLaunchDescriptionSource(
             os.path.join(
                 get_package_share_directory("ds4_driver"),
-                'launch','ds4_twist.launch.xml'
+                'launch','ds4_driver.launch.xml'
             )
         )
     )
 
     return LaunchDescription([
-        rviz_node,
+        #rviz_node,
         micro_ros_node,
-        realsense_launch,
+        #realsense_launch,
         ds4_driver_launch
     ])
