@@ -56,8 +56,8 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
-        #rviz_node,
+        rviz_node,
         micro_ros_node,
-        #realsense_launch,
+        realsense_launch,
         ds4_driver_launch
     ])
